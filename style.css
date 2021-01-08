@@ -26,7 +26,7 @@ a{
 /* Styling af min header til burger/nav menu */
 
 .header{
-    background-color: #14213d;
+    background-color: #292A3F;
     box-shadow: 1px 1px 4px 0 #000000;
     position: fixed;
     width: 100%;
@@ -38,7 +38,7 @@ a{
     padding: 0;
     list-style: none;
     overflow:hidden;
-    background-color: #14213d;
+    background-color: #292A3F;
 }
 
 .header li a{
@@ -64,7 +64,7 @@ a{
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 28px 20px;
+    padding: 28px 35px;
     position: relative;
     user-select: none;
 }
@@ -170,6 +170,8 @@ a{
     font-size: 4rem;   
 }
 
+/* Her styles min knap på forsiden */
+
 .button{
     display: inline-block;
     text-decoration: none;
@@ -179,7 +181,7 @@ a{
     padding: .5em 1.25em;
     background: #fca311;
     border-radius: 5px;
-    border: 2px solid #14213d;
+    border: 2px solid #292A3F;
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -190,20 +192,236 @@ a{
     border: 2px solid #e5e5e5;
 }
 
+/* Her styles indholdet "om mig" */
+
 .om{
     background-color: #e5e5e5;
 }
 
 h2{
+    color: #292A3F;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
+    padding: 70px 0 50px 0;
 }
 
 p{
     text-align: center;
     line-height: 40px;
     margin: 0;
-    margin: 40px 50px 40px 50px;
+    margin: 50px 50px 50px 50px;
     font-size: 1.1rem;
 }
+
+.tekst{
+    color: #e5e5e5;
+    padding: 70px 0 50px 0;
+}
+.teksten{
+    color: #e5e5e5;
+}
+
+/* Her styles projekt sectionen */
+
+.projekter{
+    background-color: #292A3F;
+}
+
+.row{
+    display: flex;
+}
+
+.colunm{
+    flex: 50%;
+    padding: 5px;
+    text-align: center;
+}
+
+.tekst2{
+    color: #292A3F;
+    padding: 70px 0 50px 0;
+}
+
+h3{
+    color: #fca311;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.ptekst{
+    color: #e5e5e5;
+}
+
+/* media quries til projekter, så de er responsive i en lang column */
+
+@media screen and (max-width: 860px) {
+    .column {
+    width: 100%;
+    }
+  
+    .row {
+      display: flex;
+     flex-direction: column;
+    }
+
+/* media quries til kontaktformular */
+
+   #left_colunm{
+       padding: 20px 30px 20px 30px;
+       line-height: 20px;
+       text-align: left;
+       background-color: #292A3F;
+       margin: 20px 20px 20px 20px;
+   }
+
+   /* media quries til h1 tekst */
+
+   .titel{
+       font-size: 2.5rem;
+
+   }
+
+}
+
+/* Her styles kontaktformularen */
+
+.kontakt{
+    background-color: #e5e5e5;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #fca311;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #292A3F;
+  }
+  
+  #left_colunm.container{
+    border-radius: 5px;
+    background-color: #292A3F;
+    padding: 20px;
+    margin: 50px 35px 25px 35px;
+    text-align: left;
+
+  }
+
+  h3{
+   display: block;
+   font-size: 1.5em;
+   font-weight: bold;
+  }
+
+  label{
+      color: #e5e5e5;
+  }
+
+  .tekst3{
+      font-size: 1.5em;
+      font-weight: bold;
+      display: block;
+      color: #292A3F;
+      padding: 7px;
+  }
+
+/* Her styles teksten til kontaktsiden */
+
+  .p3{
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      margin: 20px 20px 20px 20px;
+      text-align: justify;
+  }
+
+  .p2{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 20px 20px 20px 20px;
+    text-align: justify;
+    font-weight: bold;
+  }
+
+  .p4{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 20px 20px 20px 20px;
+    text-align: justify;
+  }
+
+  .p5{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 20px 20px 20px 20px;
+    text-align: justify;
+    font-weight: bold; 
+  }
+
+/* her styles ikoner på kontaktside */
+
+  #icons img{
+      margin: 17px;
+      width: 8%;
+      float: left;
+  }
+
+/* Her stylse min footer */
+
+.outer_footer{
+    background-image: url("./Images/footer.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #14213d;
+    position: relative;
+    min-height: 300px;
+}
+
+h4{
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    color: #e5e5e5;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.tekst4{
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    color: #e5e5e5;
+    text-align: center;
+    padding: 30px;
+
+}
+
+
+
