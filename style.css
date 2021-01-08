@@ -16,11 +16,11 @@ html{
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color: #e5e5e5;
 }
 
 a{
-    color: #ffffff;
+    color: #e5e5e5;
 }
 
 /* Styling af min header til burger/nav menu */
@@ -70,7 +70,7 @@ a{
 }
 
 .header .menu-icon .navicon{
-    background: #ffffff;
+    background: #e5e5e5;
     display: block;
     height: 2px;
     position: absolute;
@@ -80,7 +80,7 @@ a{
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after{
-    background: #ffffff;
+    background: #e5e5e5;
     content: "";
     display: block;
     height: 100%;
@@ -194,7 +194,7 @@ a{
 
 /* Her styles indholdet "om mig" */
 
-.om{
+.Om{
     background-color: #e5e5e5;
 }
 
