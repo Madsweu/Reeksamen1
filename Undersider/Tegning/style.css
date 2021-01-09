@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Her tilføjer jeg smooth til min scroll-behavior, så mine links fungerer mere glidenede */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Styling af menuen */
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+}
+
+a{
+    color: #e5e5e5;
+}
+
+/* Styling af min header til burger/nav menu */
+
+.header{
+    background-color: #1A1B2F;
+    box-shadow: 1px 1px 4px 0 #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow:hidden;
+    background-color: #1A1B2F;
+}
+
+.header li a{
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #e5e5e5;
+    text-decoration: none;
+}
+
+.header li a:hover, .header .menubutton:hover{
+    background-color: #fca311;
+}
+
+.header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* Her styler jeg mit menu icon */
+
+.header .menu-icon{
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 35px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon{
+    background: #e5e5e5;
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after{
+    background: #e5e5e5;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before{
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after{
+    top: -5px;
+}
+
+/* Styling af menu knapper */
+
+.menubutton{
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.header .menubutton{
+    display: none;
+}
+
+.header .menubutton:checked ~ .menu{
+    max-height: 280px;
+}
+
+.header .menubutton:checked ~ .menu-icon .navicon{
+    background: transparent;
+}
+
+.header .menubutton:checked ~ .menu-icon .navicon:before{
+    transform: rotate(-45deg);
+}
+
+.header .menubutton:checked ~ .menu-icon .navicon:after{
+    transform: rotate(45deg);
+}
+
+.header .menubutton:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menubutton:checked ~ .menu-icon:not(.steps) .navicon:after{
+    top: 0;
+}
+
+/* Her laver jeg media quries, så min menu er responsiv */
+
+@media (min-width: 48em) {
+    .header li{
+        float: left;
+    }
+    .header li a{
+        padding: 20px 30px;
+    }
+    .header .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon{
+        display: none;
+    }
+}
+
+/* Her styler jeg teksten på min side */
+
+.container{
+    padding: 20px 40px 20px 40px;
+    background-color: #e5e5e5;
+    display: flex;
+}
+
+h1{
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 100px;
+    color: #1A1B2F;
+    padding: 80px 0px 30px 0px;
+}
+
+h4{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-size: 1em;
+    color: #fca311;
+    text-align: left;
+}
+
+p{
+    line-height: 30px;
+    text-align: justify;
+}
+
+/* Her styler jeg mine fotos, så de står som et gallery */
+
+.column{
+    flex: 50%;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+.gallery{
+    margin-left: 40px;
+}
+
+.gallery img{
+    width: 350px;
+    max-width: 320px;
+    max-height: 206px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+/* media quries til billeder og tekst, så de er responsive i en column */
+
+@media screen and (max-width: 860px) {
+    
+    .container {
+      display: flex;
+     flex-direction: column;
+    }
+
+    .gallery{
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+
+    .gallery img{
+        filter: grayscale(0%)
+    }
+}
+
+/* Her stylse min footer */
+
+.outer_footer{
+    background-image: url(footer3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 260px;
+    size: 10px;
+}
+
+footer h4{
+    font-size: 1.3em;
+    font-weight: bold;
+    display: block;
+    color: #e5e5e5;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.tekst4{
+    font-size: 1.3em;
+    font-weight: bold;
+    display: block;
+    color: #e5e5e5;
+    text-align: center;
+    padding: 30px;
+
+}
