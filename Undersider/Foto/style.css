@@ -183,23 +183,36 @@ p{
     text-align: justify;
 }
 
-/* Her styler jeg billederne så de flexer ved siden af teksten */
+/* Her styler jeg mine fotos, så de står som et gallery */
 
 .column{
     flex: 50%;
     padding: 5px;
     text-align: center;
+    
 }
 
-/* Her styler jeg min video */
+.gallery{
+    margin-left: 40px;
+    margin-right: 280px;
+}
 
-video{
-    padding-top: 150px;
-    width: 90%;
+.gallery img{
+    width: 300px;
+    max-width: 295px;
+    max-height: 206px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
 }
 
 
-/* media quries til billeder og tekst, så de er responsive i en lang column */
+/* media quries til billeder og tekst, så de er responsive i en column */
 
 @media screen and (max-width: 860px) {
     
@@ -208,35 +221,38 @@ video{
      flex-direction: column;
     }
 
-    video{
-        padding-top: 30px;
+    .gallery{
+        margin-right: 20px;
+        margin-left: 30px;
     }
 
+    .gallery img{
+        filter: grayscale(0%)
+    }
 }
 
 /* Her stylse min footer */
 
 .outer_footer{
-    background-image: url("footer3.jpg");
+    background-image: url(footer3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: #1A1B2F;
     position: relative;
-    min-height: 300px;
-    size: 400px;
+    min-height: 260px;
+    size: 10px;
 }
 
 footer h4{
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     display: block;
     color: #e5e5e5;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 90px;
 }
 
 .tekst4{
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     display: block;
     color: #e5e5e5;
@@ -244,4 +260,3 @@ footer h4{
     padding: 30px;
 
 }
-

@@ -26,7 +26,7 @@ a{
 /* Styling af min header til burger/nav menu */
 
 .header{
-    background-color: #292A3F;
+    background-color: #1A1B2F;
     box-shadow: 1px 1px 4px 0 #000000;
     position: fixed;
     width: 100%;
@@ -38,7 +38,7 @@ a{
     padding: 0;
     list-style: none;
     overflow:hidden;
-    background-color: #292A3F;
+    background-color: #1A1B2F;
 }
 
 .header li a{
@@ -181,7 +181,7 @@ a{
     padding: .5em 1.25em;
     background: #fca311;
     border-radius: 5px;
-    border: 2px solid #292A3F;
+    border: 2px solid #1A1B2F;
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -199,7 +199,7 @@ a{
 }
 
 h2{
-    color: #292A3F;
+    color: #1A1B2F;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
@@ -225,7 +225,7 @@ p{
 /* Her styles projekt sectionen */
 
 .projekter{
-    background-color: #292A3F;
+    background-color: #1A1B2F;
 }
 
 .row{
@@ -239,7 +239,7 @@ p{
 }
 
 .tekst2{
-    color: #292A3F;
+    color: #1A1B2F;
     padding: 70px 0 50px 0;
 }
 
@@ -271,7 +271,7 @@ h3{
        padding: 20px 30px 20px 30px;
        line-height: 20px;
        text-align: left;
-       background-color: #292A3F;
+       background-color: #1A1B2F;
        margin: 20px 20px 20px 20px;
    }
 
@@ -311,12 +311,12 @@ input[type=text], select, textarea {
   }
   
   input[type=submit]:hover {
-    background-color: #292A3F;
+    background-color: #1A1B2F;
   }
   
   #left_colunm.container{
     border-radius: 5px;
-    background-color: #292A3F;
+    background-color: #1A1B2F;
     padding: 20px;
     margin: 50px 35px 25px 35px;
     text-align: left;
@@ -337,7 +337,7 @@ input[type=text], select, textarea {
       font-size: 1.5em;
       font-weight: bold;
       display: block;
-      color: #292A3F;
+      color: ##1A1B2F;
       padding: 7px;
   }
 
@@ -399,7 +399,7 @@ input[type=text], select, textarea {
     background-image: url("./Images/footer.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: #14213d;
+    color: #1A1B2F;
     position: relative;
     min-height: 300px;
 }

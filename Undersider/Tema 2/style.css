@@ -26,7 +26,7 @@ a{
 /* Styling af min header til burger/nav menu */
 
 .header{
-    background-color: #292A3F;
+    background-color: #1A1B2F;
     box-shadow: 1px 1px 4px 0 #000000;
     position: fixed;
     width: 100%;
@@ -38,7 +38,7 @@ a{
     padding: 0;
     list-style: none;
     overflow:hidden;
-    background-color: #292A3F;
+    background-color: #1A1B2F;
 }
 
 .header li a{
@@ -162,7 +162,7 @@ h1{
     font-size: 2em;
     font-weight: bold;
     padding-top: 100px;
-    color: #292A3F;
+    color: #1A1B2F;
     padding: 80px 0px 30px 0px;
 }
 
@@ -219,10 +219,10 @@ p{
 /* Her stylse min footer */
 
 .outer_footer{
-    background-image: url("footer.jpeg");
+    background-image: url("footer3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: #14213d;
+    color: #1A1B2F;
     position: relative;
     min-height: 300px;
 }
