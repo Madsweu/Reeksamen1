@@ -191,10 +191,22 @@ p{
     text-align: center;
 }
 
+/* Her styler jeg min toppil så den kun kan ses på mobile */
+
+.toppil{
+    position: fixed;
+    bottom: 19px;
+    right: 19px;
+    width: 6%;
+    opacity: 90%;
+    z-index: 99999;
+    display: none;
+}
+
 /* Her styler jeg min video */
 
 video{
-    padding-top: 150px;
+    padding-top: 200px;
     width: 90%;
 }
 
@@ -209,8 +221,18 @@ video{
     }
 
     video{
-        padding-top: 30px;
+        padding-top: 30px !important;
+        width: 100% !important;
     }
+
+    /* media quries til toppil */
+ 
+    .toppil{
+        width: 15%;
+        right: 0.5px;
+        bottom: 0.5px;
+        display: inline;
+     }
 
 }
 

@@ -192,10 +192,19 @@ a{
     border: 2px solid #e5e5e5;
 }
 
-/* Her styles indholdet "om mig" */
+/* Her styles indholdet "om mig" og knap til top */
 
 .Om{
     background-color: #e5e5e5;
+}
+
+.toppil{
+    position: fixed;
+    bottom: 19px;
+    right: 19px;
+    width: 6%;
+    opacity: 90%;
+    z-index: 99999;
 }
 
 h2{
@@ -264,6 +273,21 @@ h3{
       display: flex;
      flex-direction: column;
     }
+
+/* media quries til ikoner */
+
+    #icons img{
+        width: 10% !important;
+    }
+
+/* media quries til toppil */
+ 
+    .toppil{
+        width: 15%;
+        right: 3px;
+        bottom: 3px;
+    }
+
 
 /* media quries til kontaktformular */
 

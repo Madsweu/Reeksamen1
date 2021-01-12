@@ -210,6 +210,17 @@ p{
     transform: scale(1.1);
 }
 
+/* Her styler jeg min toppil så den kun kan ses på mobile */
+
+.toppil{
+    position: fixed;
+    bottom: 19px;
+    right: 19px;
+    width: 6%;
+    opacity: 90%;
+    z-index: 99999;
+    display: none;
+}
 
 /* media quries til billeder og tekst, så de er responsive i en column */
 
@@ -228,6 +239,15 @@ p{
     .gallery img{
         filter: grayscale(0%)
     }
+
+    /* media quries til toppil */
+ 
+    .toppil{
+        width: 15%;
+        right: 0.5px;
+        bottom: 0.5px;
+        display: inline;
+     }
 }
 
 /* Her stylse min footer */
