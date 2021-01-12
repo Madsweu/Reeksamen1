@@ -170,8 +170,6 @@ h4{
     display: block;
     margin-block-start: 1.33em;
     margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
     font-size: 1em;
     color: #fca311;
@@ -260,7 +258,6 @@ p{
     background-size: cover;
     position: relative;
     min-height: 260px;
-    size: 10px;
 }
 
 footer h4{
