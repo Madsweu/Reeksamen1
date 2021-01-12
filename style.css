@@ -152,7 +152,7 @@ a{
 
 /* Her starter styling af mit forside billede */
 
-.Billede{
+.Bagground{
     background-image: url("Baggrund.jpg");
     min-height: 500px;
     height: 100vh;
@@ -337,7 +337,7 @@ input[type=text], select, textarea {
       font-size: 1.5em;
       font-weight: bold;
       display: block;
-      color: ##1A1B2F;
+      color: #1A1B2F;
       padding: 7px;
   }
 
@@ -380,7 +380,7 @@ input[type=text], select, textarea {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 0px 20px;
     text-align: justify;
     font-weight: bold; 
   }
@@ -396,7 +396,7 @@ input[type=text], select, textarea {
 /* Her stylse min footer */
 
 .outer_footer{
-    background-image: url("./Images/footer.jpeg");
+    background-image: url("./Images/footer3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #1A1B2F;

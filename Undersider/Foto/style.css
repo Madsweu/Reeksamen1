@@ -217,13 +217,13 @@ p{
 @media screen and (max-width: 860px) {
     
     .container {
-      display: flex;
+     display: flex;
      flex-direction: column;
     }
 
     .gallery{
         margin-right: 20px;
-        margin-left: 30px;
+        margin-left: 45px;
     }
 
     .gallery img{
